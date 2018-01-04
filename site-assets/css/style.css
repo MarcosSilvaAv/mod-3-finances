@@ -1,0 +1,15 @@
+input#inputAccMovDate.flatpickr-movs {
+	background-color: #fff;
+}
+
+#account-view h6 {
+	font-weight: 700;
+}
+
+.text-green {
+	color: #449d44;
+}
+
+.text-red {
+	color: #d9534f;
+}
