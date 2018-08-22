@@ -4,10 +4,10 @@ $cfg->mdl = new stdClass();
 $cfg->mdl->name = "Finances";
 $cfg->mdl->folder = "mod-3-finances";
 $cfg->mdl->path = "{$cfg->system->path_bo}/modules/{$cfg->mdl->folder}/";
-$cfg->mdl->version = "0.0.1";
+$cfg->mdl->version = "0.0.2";
 $cfg->mdl->developer = "Marcos Silva";
 $cfg->mdl->contact = "marcos@one-shift.com";
-$cfg->mdl->dbTables = ["finances_accounts", "finances_accounts_movements", "finances_invoices", "finances_invoices_items"];
+$cfg->mdl->dbTables = ["3_finances_accounts", "3_finances_accounts_movements", "3_finances_invoices", "3_finances_invoices_items"];
 
 // load language for module
 if (file_exists("modules/{$cfg->mdl->folder}/languages/{$lg_s}.ini")) {

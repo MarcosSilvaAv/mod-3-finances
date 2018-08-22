@@ -1,15 +1,17 @@
 <?php
 
-	$mdl = bo3::mdl_load("templates/invoices.tpl");
-	$mdl_menu = bo3::mdl_load("templates-e/invoices/menu.tpl");
+	$breadcrumb = [];
 
+	$breadcrumb[] = [
+		"name" => "Invoices",
+		"link" => ""
+	];
 
 	$mdl = bo3::c2r(
 		[
-			'mod-menu' => $mdl_menu,
-		],
-		$mdl
-	);
 
+		],
+		bo3::mdl_load("templates/invoices.tpl")
+	);
 
 	include "pages/module-core.php";

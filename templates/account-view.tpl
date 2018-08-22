@@ -1,16 +1,33 @@
+<div class="row jumbotron md-tacenter sm-tacenter xs-tacenter">
+	<div class="col-xs-12 col-sm-4 col-md-3">
+		<h4>{c2r-acc-name-label}&nbsp;</h4>{c2r-acc-name-value}
+	</div>
+	<div class="col-xs-12 col-sm-4 col-md-3">
+		<h4>{c2r-acc-balance-label}&nbsp;</h4>{c2r-acc-balance-value}
+	</div>
+	<div class="col-xs-12 col-sm-4 col-md-3">
+		<h4>{c2r-acc-institutionName-label}&nbsp;</h4>{c2r-acc-institutionName-value}
+	</div>
+	<div class="col-xs-12 col-sm-4 col-md-3">
+		<h4>{c2r-acc-iban-label}&nbsp;</h4>{c2r-acc-iban-value}
+	</div>
+</div>
 <div class="row">
 	<div class="col-xs-12 col-sm-8 col-md-8 md-tacenter sm-tacenter xs-tacenter">
+		<div class="md-spacer15 sm-spacer15 xs-spacer15"></div>
 		Espaço para filtros
 		<div class="xs-spacer15"></div>
 	</div>
 	<div class="col-xs-12 col-sm-4 col-md-1 md-tacenter sm-tacenter xs-tacenter">
+		<div class="md-spacer15 sm-spacer15 xs-spacer15"></div>
 		<button type="submit" class="btn btn-primary" name="filterCategory">Filter</button>
 	</div>
 	<div class="col-xs-12 col-sm-12 col-md-3 md-taright sm-tacenter xs-tacenter">
 		<div class="sm-spacer15 xs-spacer15"></div>
-		<button data-toggle="modal" data-target="#form-add-account" data-backdrop="static" data-keyboard="false" class="btn btn-add" role="button">
-			<i class="fa fa-plus" aria-hidden="true"></i><div class="sm-block15 xs-block15"></div>{c2r-label-add-account}
+		<button data-toggle="modal" data-target="#form-add-movement" data-backdrop="static" data-keyboard="false" class="btn btn-add" role="button">
+			<i class="fa fa-plus" aria-hidden="true"></i><div class="sm-block15 xs-block15"></div>{c2r-label-add-movement}
 		</button>
+
 	</div>
 </div>
 <div class="md-spacer15 sm-spacer15 xs-spacer15"></div>
@@ -20,16 +37,16 @@
 			<thead>
 				<tr>
 					<th width="2%">#</th>
-					<th>{c2r-acc-label-name}</th>
-					<th>{c2r-acc-label-institutionName}</th>
-					<th>{c2r-acc-label-balance}</th>
-					<th>{c2r-acc-label-last-mov-date}</th>
-					<th>{c2r-acc-label-status}</th>
+					<th width="30%">{c2r-mov-label-name}</th>
+					<th>{c2r-mov-label-value}</th>
+					<th>{c2r-mov-label-user}</th>
+					<th>{c2r-mov-label-date}</th>
+					<th>{c2r-mov-label-status}</th>
 					<th></th>
 				</tr>
 			</thead>
 			<tbody>
-				{c2r-acc-list}
+				{c2r-acc-movs-list}
 			</tbody>
 		</table>
 	</div>
@@ -37,7 +54,8 @@
 
 <div class="md-spacer15 sm-spacer15 xs-spacer15"></div>
 
-{c2r-form-add-account}
+{c2r-form-add-acc-movement}
+{c2r-form-edit-acc-movement}
 
 <script>
 	let dtli = "{c2r-dt-legends-info}",
